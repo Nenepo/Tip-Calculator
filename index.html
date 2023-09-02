@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Tip Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="body">
+       <h3>split</h3>
+    <div class="form">
+      <form action="get">
+        <div class="total-bill">
+          <label for="name">Bill total</label>
+          <div class="input">
+            <span>$</span>
+            <input 
+            onkeyup="calculateBill()"
+             id="Total-bill" class="tip-input" type="text" placeholder="0.00" >
+          </div>
+        </div>
+        <div class="total-bill">
+          <label for="text">Tip</label>
+          <div class="input">
+            <span>%</span>
+            <input  
+            onkeyup="calculateBill()" id="Tip" class="tip-input" type="text" placeholder="10"  >
+          </div>
+          
+        </div>
+        <div class="people-total">
+          <div class="total-bill">
+            <label>People</label>
+            <div class="button">
+              <span  id="sum" class="span">+</span>
+              <p class="number"></p>
+              <span id="substract" class="span">-</span>
+            </div>
+          </div >
+          <div class="total-bill">
+            <label>Total per person</label>
+            <p id="Totalbill" class="total-number">$0.00</p>
+          </div>
+        </div>
+        <div class="reset-btn">
+          <span id="reset">Reset</span>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
