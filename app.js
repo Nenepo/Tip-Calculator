@@ -64,3 +64,10 @@ substractNumberOfPeople.addEventListener('click', () => {
   calculateBill();
 });
 
+const reset = document.getElementById('reset')
+reset.addEventListener('click', () => {
+  numberOfPeopleElement.innerText = 1;
+  totalBillElement.value = '';
+  tipInput.value = '';
+  calculateBillElement.innerText = '$ 0.00';
+})
